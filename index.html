@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Qatar University Co-op Work Term Report | AI Developer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Bachelor of Computing Co-op Work Term Report: Qatar University - AI Developer Co-op building a clinical consultation platform for speech and language pathology in Doha, Qatar." />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background: #f5f5f5;
+		}
+
+		#header {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			text-align: center;
+			padding: 80px 20px;
+		}
+
+		.logo {
+			font-size: 48px;
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+
+		#header h1 {
+			font-size: 2.5em;
+			margin-bottom: 10px;
+			font-weight: 600;
+		}
+
+		#header p {
+			font-size: 1.2em;
+			opacity: 0.9;
+		}
+
+		#main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 40px 20px;
+		}
+
+		.major {
+			text-align: center;
+			margin-bottom: 60px;
+			background: white;
+			padding: 40px;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.major h2 {
+			font-size: 2.5em;
+			margin-bottom: 30px;
+			color: #667eea;
+		}
+
+		.image.featured {
+			display: block;
+			margin: 30px 0;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.image.featured img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.major p {
+			font-size: 1.1em;
+			line-height: 1.8;
+			color: #555;
+			margin-top: 20px;
+		}
+
+		.feature {
+			display: flex;
+			align-items: center;
+			gap: 40px;
+			margin-bottom: 60px;
+			background: white;
+			padding: 40px;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.feature.left {
+			flex-direction: row;
+		}
+
+		.feature.right {
+			flex-direction: row-reverse;
+		}
+
+		.feature .image {
+			flex: 0 0 300px;
+			height: 300px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #f0f0f0;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.feature .image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.feature .image .icon {
+			font-size: 80px;
+			color: #667eea;
+		}
+
+		.feature .content {
+			flex: 1;
+		}
+
+		.feature .content h3 {
+			font-size: 2em;
+			margin-bottom: 20px;
+			color: #667eea;
+		}
+
+		.feature .content p {
+			font-size: 1.1em;
+			line-height: 1.8;
+			color: #555;
+			margin-bottom: 15px;
+		}
+
+		.stack {
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-top: 20px;
+		}
+
+		.stack li {
+			background: #f0f0ff;
+			color: #5a4b9c;
+			border: 1px solid #ddd8f5;
+			border-radius: 20px;
+			padding: 6px 16px;
+			font-size: 0.95em;
+			font-weight: 500;
+		}
+
+		.goals {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 25px;
+			margin-top: 30px;
+			text-align: left;
+		}
+
+		.goal {
+			background: #fafaff;
+			border-left: 4px solid #667eea;
+			border-radius: 8px;
+			padding: 25px;
+		}
+
+		.goal h4 {
+			font-size: 1.2em;
+			color: #5a4b9c;
+			margin-bottom: 10px;
+		}
+
+		.goal p {
+			font-size: 1.05em;
+			line-height: 1.7;
+			color: #555;
+			margin-top: 10px;
+		}
+
+		.goal .tag {
+			display: inline-block;
+			font-size: 0.8em;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #667eea;
+			font-weight: 600;
+		}
+
+		footer.major {
+			text-align: left;
+		}
+
+		footer.major h3 {
+			font-size: 2em;
+			margin-bottom: 20px;
+			color: #667eea;
+		}
+
+		footer.major p {
+			font-size: 1.1em;
+			line-height: 1.8;
+			color: #555;
+			margin-bottom: 20px;
+		}
+
+		#footer {
+			background: #2c3e50;
+			color: white;
+			text-align: center;
+			padding: 30px 20px;
+			margin-top: 60px;
+		}
+
+		.copyright {
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.copyright li {
+			font-size: 0.9em;
+		}
+
+		.copyright a {
+			color: #667eea;
+			text-decoration: none;
+		}
+
+		.copyright a:hover {
+			text-decoration: underline;
+		}
+
+		@media (max-width: 768px) {
+			.feature {
+				flex-direction: column !important;
+			}
+
+			.feature .image {
+				flex: 0 0 250px;
+				height: 250px;
+			}
+
+			#header h1 {
+				font-size: 2em;
+			}
+
+			.major h2, .feature .content h3 {
+				font-size: 1.8em;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<div id="header">
+		<span class="logo">🧠</span>
+		<h1>Qatar University</h1>
+		<p>
+			AI Developer Co-op &mdash; Clinical Consultation Platform<br />
+			Doha, Qatar (May&ndash;August 2025, hybrid)
+		</p>
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Introduction -->
+		<header class="major container medium">
+			<h2>Co-op Work Term Report</h2>
+
+			<span class="image featured">
+				<img src="images/pic01.png" alt="Qatar University campus in Doha, where I worked during my co-op term." onerror="this.parentNode.style.display='none';" />
+			</span>
+
+			<p>
+				From May to August 2025, I worked at Qatar University with Dr. Tariq Khwaileh on the Phase 1 prototype of an
+				AI-supported consultation platform for speech and language pathology. The term combined in-person and hybrid work,
+				and my main responsibility was turning an early architecture into a working English-language prototype I could demo.
+			</p>
+			<p>
+				What stayed with me most was that a useful clinical AI system is not just about getting a model to produce an answer.
+				The surrounding system has to be careful about evidence, privacy, and the limits of what it should tell clinicians or families.
+			</p>
+		</header>
+
+		<div class="box alt container">
+
+			<!-- Employer Info -->
+			<section class="feature left">
+				<div class="image">
+					<img src="images/pic02.png" alt="My laptop workspace during the co-op term." onerror="this.outerHTML='&lt;span class=&quot;icon&quot;&gt;🏛️&lt;/span&gt;';" />
+				</div>
+				<div class="content">
+					<h3>Employer Information</h3>
+					<p>
+						I worked under Dr. Tariq Khwaileh at Qatar University in Doha, where he is an Associate Professor of Linguistics in the
+						Department of English Literature and Linguistics and Section Head of Data Analytics and Assessment. His research sits
+						at the intersection of psycholinguistics, language disorders, and neuropsychological assessment, and he leads the
+						<a href="https://www.researchgate.net/lab/Arabic-Aphasia-Lab-Tariq-Khwaileh">Arabic Aphasia Lab</a>.
+					</p>
+					<p>
+						A few things I found genuinely interesting about his work: much of aphasia research has been built on English and other
+						Indo-European languages, so his group has spent years building the assessment materials Arabic clinicians were missing &mdash;
+						including an aphasia battery for Qatari/Gulf Arabic and a standardized set of hundreds of object and action pictures with
+						naming-latency norms. More recently his lab has moved into computational territory, publishing on automated systematic
+						review workflows and on clustering aphasic speech by feature extraction technique. Across 26 publications his work has
+						been cited around 250 times and read over 17,000 times.
+					</p>
+					<p>
+						That combination is exactly the area of computing this term lived in: applied natural language processing and machine
+						learning in a clinical and linguistic research setting, where the language itself is the data.
+					</p>
+				</div>
+			</section>
+
+			<!-- Job Description -->
+			<section class="feature right">
+				<div class="image">
+					<img src="images/pic03.png" alt="The evidence-retrieval interface running locally during development." onerror="this.outerHTML='&lt;span class=&quot;icon&quot;&gt;💻&lt;/span&gt;';" />
+				</div>
+				<div class="content">
+					<h3>Job Description</h3>
+					<p>
+						My project was an AI-powered consultation platform for speech and language pathology, built to serve two very different
+						audiences: parents looking for grounded answers about their child's speech development, and clinicians and researchers who
+						need to work with source material directly. I was responsible for the system end to end &mdash; the retrieval layer, the
+						model backend, the API, the interface, and the infrastructure that ties them together.
+					</p>
+					<p>
+						The Phase 1 prototype was a self-hosted, English-only, text-based build. It used retrieval-augmented generation so responses
+						could be grounded in source documents and accompanied by citations. I also worked on importing corpus data, containerizing
+						the services so the stack could run consistently, and keeping the model backend replaceable rather than tying the project
+						to one machine or provider.
+					</p>
+					<p>
+						The most unique part of the job was that the hard questions weren't coding questions. Deciding that the system must refuse
+						to diagnose, that it should say "I don't know" rather than guess, and that research-licensed corpus data must stay isolated
+						from anything a parent sees &mdash; those decisions shaped the architecture more than any performance consideration did.
+					</p>
+					<ul class="stack">
+						<li>Python</li>
+						<li>FastAPI</li>
+						<li>Next.js</li>
+						<li>PostgreSQL</li>
+						<li>pgvector</li>
+						<li>Ollama</li>
+						<li>vLLM</li>
+						<li>Qwen3</li>
+						<li>RAG</li>
+						<li>Docker Compose</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Goals and Learning Outcomes -->
+		<header class="major container medium">
+			<h2>Goals and Learning Outcomes</h2>
+			<p>
+				Coming into the term, I had two goals of my own on top of my formal learning outcomes. The first was to get better at
+				connecting a real-world problem to an AI solution &mdash; starting from what a clinician and a parent actually need rather
+				than from what a model can do. The second was to grow technically, because I was going to be the only person building this
+				and there was nobody to hand the hard parts to.
+			</p>
+			<p>
+				The technology choices followed from the problem. Everything had to be self-hosted on open-weight models, because clinical
+				and research data can't be shipped off to a third-party API. That meant Qwen3 served locally through Ollama during development
+				and vLLM for larger deployments, Qwen3 embedding and reranker models for retrieval, PostgreSQL with pgvector for similarity
+				search, FastAPI for the backend, Next.js for the interface, and Docker Compose to orchestrate it all. Each of these was chosen
+				because of a constraint, and being able to explain why is the part I'm most glad I have.
+			</p>
+			<p>
+				My courses gave me a base in databases, web development, APIs, and software design. The parts I mainly learned during the
+				term were vector search, retrieval-augmented generation, local model serving, and coordinating several services with Docker.
+				Connecting those new tools to concepts I already knew made the project manageable and gave me experience I can carry into
+				future software and AI roles.
+			</p>
+
+			<div class="goals">
+
+				<div class="goal">
+					<span class="tag">Completed</span>
+					<h4>Personal Organization &amp; Time Management</h4>
+					<p>
+						With no fixed sprint structure, I was setting my own priorities on a system with a long-term architecture. The shift that
+						worked was finishing one complete path through the system before adding breadth, and deliberately cutting scope ahead of a
+						demo instead of running out of time across several half-built features. A working end-to-end pipeline turned out to be far
+						easier to demo and build on than four partial ones.
+					</p>
+				</div>
+
+				<div class="goal">
+					<span class="tag">Completed</span>
+					<h4>Written Communication</h4>
+					<p>
+						Dr. Tariq is a clinical researcher, so my updates had to lead with what the system could and couldn't do before any
+						implementation detail, and my setup instructions had to let him run and verify the platform without me walking him through it.
+						I learned that overstating progress is easier to do by accident than I expected, and that being specific about what isn't
+						finished makes conversations more productive, not less.
+					</p>
+				</div>
+
+				<div class="goal">
+					<span class="tag">Completed</span>
+					<h4>Ethical Reasoning</h4>
+					<p>
+						In a healthcare context, the wrong output can affect a real family, so I treated clinical safety and data licensing as design
+						constraints rather than afterthoughts. The system refuses to diagnose, won't answer without verifiable citations, and keeps
+						research-only data isolated from parent-facing responses &mdash; enforced structurally, so that violations are difficult by
+						design rather than dependent on the model behaving well.
+					</p>
+				</div>
+
+				<div class="goal">
+					<span class="tag">Completed</span>
+					<h4>Technological Literacy</h4>
+					<p>
+						Several pieces of this stack were new to me: pgvector for similarity search, local model serving through Ollama, and Docker
+						Compose for multi-service orchestration. I made a habit of reading the actual documentation and verifying assumptions directly &mdash;
+						checking an embedding model's output dimension against the database schema before writing to it, for instance. The risky part
+						was never the setup; it was assuming a tool behaves the way I expect without checking.
+					</p>
+				</div>
+
+				<div class="goal">
+					<span class="tag">Completed</span>
+					<h4>Problem Solving</h4>
+					<p>
+						The project gave me several concrete problems to work through, including a migration checksum conflict, a database
+						authentication error, and a CHILDES corpus dry run that did not behave as expected. I learned to isolate one layer at a time
+						instead of changing several services at once. When the original architecture also assumed a GPU server I did not have, I
+						separated the model backend into replaceable pieces so development could continue on my M1 laptop with 16 GB of memory.
+					</p>
+				</div>
+
+				<div class="goal">
+					<span class="tag">Partially met</span>
+					<h4>What I didn't finish</h4>
+					<p>
+						The original scope included Arabic-language support and audio-based analysis, which I deferred early to keep phase one
+						deliverable. That was the right call, but it's honest to say it's unfinished rather than complete. Scoping is also still
+						the skill I'm weakest at: I got much better at estimating a two-day demo, and I'm still not reliable at estimating a
+						two-month build.
+					</p>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- Conclusion + Acknowledgements -->
+		<footer class="major container medium">
+			<h3>Conclusion</h3>
+			<p>
+				This term was about building a working prototype for a clinical research problem and learning that engineering judgement
+				matters as much as model selection. I finished with a self-hosted retrieval system that I could explain and demonstrate, as
+				well as a clearer understanding of when an AI system should decline to answer.
+			</p>
+			<p>
+				The technical skills carry forward directly &mdash; retrieval pipelines, vector search, containerized services, and working with
+				open-weight models are the same tools I'll reach for in future co-op terms and full-time roles. The habits carry further: verify
+				before depending on something, ship one working path before adding breadth, and write updates that a non-engineer can act on.
+			</p>
+
+			<h3>Acknowledgements</h3>
+			<p>
+				Thank you to Dr. Tariq Khwaileh for the trust to build this largely on my own, for the clinical perspective I couldn't have
+				supplied myself, and for asking good questions at every check-in. Thank you as well to the University of Guelph co-op staff,
+				and to my peers who listened to me think out loud about architecture decisions.
+			</p>
+			<p style="margin-bottom: 0;">
+				What I will remember most is seeing ideas from class become part of a system intended to support careful clinical work.
+				Working through the limitations of the hardware, data, and model made the experience much more concrete than a classroom exercise.
+			</p>
+		</footer>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="container medium">
+			<ul class="copyright">
+				<li>&copy; 2026. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
